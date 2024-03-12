@@ -1,0 +1,115 @@
+body{
+    height: 100vh;
+    font-family: "Rubik", sans-serif;
+    background-color: #ffffff;
+    background-image: radial-gradient(rgba(12, 12, 12, 0.171) 2px, transparent 0);
+    background-size: 30px 30px;
+    background-position: -5px -5px;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.piano{
+    position: relative;
+    display: flex;
+    background-color: black;
+}
+.key{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 10vh;
+    height: 40vh;
+    background-color: white;
+    border: .5px solid black;
+    border-bottom-right-radius: 2vh;
+    border-bottom-left-radius: 2vh;
+    z-index: 1;
+    transition: .2s linear;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset
+}
+.key p{
+    background: #666666;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
+}
+.key.active{
+    transform: translateY(-1.5px) scale(0.99);
+    background: #fffefee8;
+}
+.bkey{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    position: absolute;
+    width: 7vh;
+    height: 27vh;
+    background-color: black;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    z-index: 2;
+    transition: .2s linear;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, #ffffff 0px 7px 13px -3px, #ffffff45 0px -3px 0px inset
+}
+.bkey p{
+    background: #666666;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
+}
+.bkey.active{
+    transform: translateY(-1px) scale(.99);
+    background: rgba(0, 0, 0, 0.756);
+}
+#b1{
+    top: 0px;
+    left: 5.9vh;
+}
+#b2{
+    left: 17vh;
+}
+#b3{
+    left: 27.5vh;
+}
+#b4{
+    left: 47vh;
+}
+#b5{
+    left: 58vh;
+}
+#b6{
+    left: 78vh;
+}
+#b7{
+    left: 88vh;
+}
+#b8{
+    left: 109vh;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+    font-size: 5vh;
+    font-family: "Rubik", sans-serif;
+    background: #666666;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
+}
+.title h1{
+    height: 9vh;
+}
+.title p{
+    font-size: 2vh;
+}
